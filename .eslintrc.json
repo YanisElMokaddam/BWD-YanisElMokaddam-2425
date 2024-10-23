@@ -1,0 +1,57 @@
+{
+   "env": {
+      "browser": true,
+      "node": true,
+      "es2021": true
+   },
+   "extends": "eslint:recommended",
+   "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module",
+      "ecmaFeatures": {
+         "jsx": true
+      }
+   },
+   "rules": {
+      "quotes": [
+         "warn",
+         "single"
+      ],
+      "prefer-const": [
+         "warn",
+         {
+            "destructuring": "any",
+            "ignoreReadBeforeAssign": false
+         }
+      ],
+      "semi": [
+         "warn",
+         "always"
+      ],
+      "no-template-curly-in-string": [
+         "error"
+      ],
+      "no-prototype-builtins": 0,
+      "no-use-before-define": [
+         "error",
+         {
+            "functions": false,
+            "classes": true,
+            "variables": true
+         }
+      ],
+      "camelcase": 2,
+      "no-debugger": "warn",
+      "no-empty-function": "error",
+      "no-lone-blocks": "error",
+      "no-lonely-if": "error",
+      "no-useless-concat": "error",
+      "no-var": "error",
+      "require-await": "error",
+      "vars-on-top": "error",
+      "no-mixed-spaces-and-tabs": [
+         "error",
+         "smart-tabs"
+      ]
+   }
+}
